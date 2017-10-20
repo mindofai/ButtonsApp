@@ -13,5 +13,11 @@ namespace ButtonsApp
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            var btn = (Button)sender;
+            DisplayAlert("Button clicked", $"The button is {btn.Text}", "OK");
+        }
     }
 }
